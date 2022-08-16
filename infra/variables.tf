@@ -21,3 +21,16 @@ variable "inbound_ports" {
   description = "List of the inbound ports for Security Group"
   default     = ["22", "80"]
 }
+
+variable "ACCOUNT_ID" {}
+
+variable "container_port" {
+  description = "python app container port"
+  default     = 5000
+}
+
+variable "environment_name" {
+  type        = string
+  description = "Set environment name"
+  default     = "Staging"
+}
